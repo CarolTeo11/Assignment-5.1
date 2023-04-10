@@ -66,6 +66,12 @@ Passenger: alone, partner, kid(s), or friend(s)
 
 time before it expires: 2 hours or one day
 
+## Data and codes
+
+All codes can be found here https://github.com/CarolTeo11/Assignment-5.1/blob/main/assignment_5_1_starter/Carolprompt.ipynb
+
+The data can be found here https://github.com/CarolTeo11/Assignment-5.1/tree/main/assignment_5_1_starter/data
+
 ## Data cleaning
 
 1.  While the data is relatively structured and consistent, there is a need to correct for spelling error so that there is no downstream coding issues.  In particular, passenger is spelt "passanger" and is corrected using 
