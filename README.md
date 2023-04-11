@@ -78,12 +78,12 @@ The data can be found here https://github.com/CarolTeo11/Assignment-5.1/tree/mai
 data = data.rename(columns={'passanger': 'passenger'})
 Also, the data in "passenger" contains parenthesis and are removed as parenthesis are regular expressions and can cause downstream issues with codes. 
 
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/130137674/230892009-ced8b603-2445-423d-9bde-a6e712f27d3f.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/130137674/230892009-ced8b603-2445-423d-9bde-a6e712f27d3f.png">
 
 2.  I always run data.isnull().sum().sort_values() to determine which dataset has missing (NaN) data.  This is to correct for data errors and to understand if missing data should be totally removed from the analysis.  In the end, I replaced all NaN entries in the follow categories with "never". 
 data[['Bar','RestaurantLessThan20', 'CarryAway', 'Restaurant20To50','CoffeeHouse']]= data[['Bar','RestaurantLessThan20', 'CarryAway', 'Restaurant20To50','CoffeeHouse']].fillna('never')
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/130137674/230891969-6170d68b-e05e-44bc-af2a-19db6ff26543.png">
+<img width="520" alt="image" src="https://user-images.githubusercontent.com/130137674/230891969-6170d68b-e05e-44bc-af2a-19db6ff26543.png">
 
 
 3. There are missing data in "car" but i ignored it as there was not a lot to go by with car data and it was not used in this analysis.
@@ -123,7 +123,7 @@ Based on the plots, i hypothesise that bar coupon acceptance are dependent on th
 
 (b) However, the second hypothesis that the bar coupon was rejected due to its being in the same direction as where the car was driving to appears to be correct.  In fact, 40 out of 46 (~87%) was heading in the opposite directions.  H
 
-<img width="388" alt="image" src="https://user-images.githubusercontent.com/130137674/231194310-4b275514-462b-4647-a890-852fd3b1dc62.png">
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/130137674/231194310-4b275514-462b-4647-a890-852fd3b1dc62.png">
 
 #### Presence of kids as passengers 
 
