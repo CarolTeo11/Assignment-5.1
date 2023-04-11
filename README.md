@@ -78,12 +78,12 @@ The data can be found here https://github.com/CarolTeo11/Assignment-5.1/tree/mai
 data = data.rename(columns={'passanger': 'passenger'})
 Also, the data in "passenger" contains parenthesis and are removed as parenthesis are regular expressions and can cause downstream issues with codes. 
 
-<img width="215" alt="image" src="https://user-images.githubusercontent.com/130137674/230892009-ced8b603-2445-423d-9bde-a6e712f27d3f.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/130137674/230892009-ced8b603-2445-423d-9bde-a6e712f27d3f.png">
 
 2.  I always run data.isnull().sum().sort_values() to determine which dataset has missing (NaN) data.  This is to correct for data errors and to understand if missing data should be totally removed from the analysis.  In the end, I replaced all NaN entries in the follow categories with "never". 
 data[['Bar','RestaurantLessThan20', 'CarryAway', 'Restaurant20To50','CoffeeHouse']]= data[['Bar','RestaurantLessThan20', 'CarryAway', 'Restaurant20To50','CoffeeHouse']].fillna('never')
 
-<img width="344" alt="image" src="https://user-images.githubusercontent.com/130137674/230891969-6170d68b-e05e-44bc-af2a-19db6ff26543.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/130137674/230891969-6170d68b-e05e-44bc-af2a-19db6ff26543.png">
 
 
 3. There are missing data in "car" but i ignored it as there was not a lot to go by with car data and it was not used in this analysis.
@@ -119,11 +119,11 @@ Based on the plots, i hypothesise that bar coupon acceptance are dependent on th
 
 (a)  The first hypothesis that the bar coupon was rejected due to kids was not correct.  In fact, most of them were alone.  This could suggest that most people enjoy having a glass with others instead of being alone.  
 
-<img width="424" alt="image" src="https://user-images.githubusercontent.com/130137674/231116774-57b8d1c0-3e69-4311-a6ea-a1f8c613b00a.png">
+<img width="433" alt="image" src="https://user-images.githubusercontent.com/130137674/231194111-1bbf8005-d4e6-411a-887b-8e21fb0cb27e.png">
 
-(b) However, the second hypothesis that the bar coupon was rejected due to its being in the same direction as where the car was driving to appears to be correct.  In fact, 961 out of 1,190 (~81%) was heading in the opposite directions.   
+(b) However, the second hypothesis that the bar coupon was rejected due to its being in the same direction as where the car was driving to appears to be correct.  In fact, 40 out of 46 (~87%) was heading in the opposite directions.  H
 
-<img width="287" alt="image" src="https://user-images.githubusercontent.com/130137674/231118735-e01b189b-78d8-455f-9fed-b42e51f4e16e.png">
+<img width="388" alt="image" src="https://user-images.githubusercontent.com/130137674/231194310-4b275514-462b-4647-a890-852fd3b1dc62.png">
 
 #### Presence of kids as passengers 
 
@@ -139,7 +139,19 @@ Indeed, the driver is more likely to accept the bar coupon when they are with fr
 
 <img width="463" alt="image" src="https://user-images.githubusercontent.com/130137674/230890497-07e95b6e-6269-4a27-bdf8-97488b05f71d.png">
 
-Indeed, those who have been to expensive restaurants at least 4 times are more likely to accept the coupon.  This observation is consistent with that for bar coupons.
+Indeed, those who have been to expensive restaurants at least 4 times are more likely to accept the coupon.  This observation is consistent with that for bar coupons.  I deepdived into the population of drivers who frequent expensive restaurant at least 4 times but yet rejecte the expensive restaurant coupon.  I plotted 3key factors, (a) passenger (b) weather conditions (c) if the restaurant is in the same direction as where the driver was heading.  Here, I normalised the data to ensure i plotted against the overall count of passenger, weather and direction_same as I think absolute count will affect the conclusion. 
+
+(a) Passenger.  It appears that people tend not to visit an expensive restaurant alone.  
+
+<img width="425" alt="image" src="https://user-images.githubusercontent.com/130137674/231195944-512fd569-4b53-46d2-8e2f-3f528032244e.png">
+
+(b)  Weather.  Bad weather day, i.e. snowy and rainy days will impeded people's decision to visit an expensive restaurant.  
+
+<img width="438" alt="image" src="https://user-images.githubusercontent.com/130137674/231196777-9b3afa24-b15e-44eb-bf48-46fe4c28146f.png">
+
+(c) direction_same.  Similar to bar coupon, coupon for expensive restaurants are rejected if it is not in the same direction as the driver's intented directions.  The inconvenience and extra mileage was deemed as undesirable factor for accepting the coupon.  
+
+<img width="425" alt="image" src="https://user-images.githubusercontent.com/130137674/231196985-b64c0d3d-4b50-4dea-9d21-b63a7f78aa54.png">
 
 8.  Because the restaurant is relatively expensive, we further hypothesis that income has an impact on the coupon acceptance rate.  
 
@@ -166,3 +178,5 @@ Interestingly, a person is more likely to go to an expensive restaurant with the
 2. Second, we should observe the passenger.  If there are kids, it is to give them pub coupons.  If the drivers are with their partners, then it is ideal that expensive restaurant coupons be given.
 
 3. Third, we try to reduce the need for the driver to detour.  As far as possible, the direction of the pub/ restaurant should be in the same direction as his/ her intended destination.  Convenience appears to be a key motivation for their acceptance of the coupon.  
+
+4. Weather conditions affect a drivers' decision to accept a coupon.  In general, snowy and rainy days are considered undesirable.  
