@@ -113,9 +113,21 @@ Based on the plots, i hypothesise that bar coupon acceptance are dependent on th
 
 <img width="448" alt="image" src="https://user-images.githubusercontent.com/130137674/230889715-03739d5f-0424-4368-b536-e850124d1ec5.png">
 
+#### Studying the reverse why driver do not accept the bar coupon 
+
+5.  Intead of focusing on just the factors affecting the acceptance of bar coupons, I hypothesised that given a driver has been to a bar at least 4 times, the reason for him/ her to reject the bar coupon was due to either (a) the presence of kid(s) as passenger or (b) the location of the pub was not "along the walk" and hence, inconvenient to get to. First, we filter out the drivers who have been to a bar at least 4 times accepted the bar coupon.  
+
+(a)  The first hypothesis that the bar coupon was rejected due to kids was not correct.  In fact, most of them were alone.  This could suggest that most people enjoy having a glass with others instead of being alone.  
+
+<img width="424" alt="image" src="https://user-images.githubusercontent.com/130137674/231116774-57b8d1c0-3e69-4311-a6ea-a1f8c613b00a.png">
+
+(b) However, the second hypothesis that the bar coupon was rejected due to its being in the same direction as where the car was driving to appears to be correct.  In fact, 961 out of 1,190 (~81%) was heading in the opposite directions.   
+
+<img width="287" alt="image" src="https://user-images.githubusercontent.com/130137674/231118735-e01b189b-78d8-455f-9fed-b42e51f4e16e.png">
+
 #### Presence of kids as passengers 
 
-5.  Often, a driver is less likely to accept the bar coupon if they had passengers who are kids. this is likely a reflection of social behaviour where adults try to disassociate kids from "drinking holes".
+6.  Often, a driver is less likely to accept the bar coupon if they had passengers who are kids. this is likely a reflection of social behaviour where adults try to disassociate kids from "drinking holes".
 
 <img width="448" alt="image" src="https://user-images.githubusercontent.com/130137674/230890074-9f9d529e-24c1-4ed4-8d50-89572a26822e.png">
 
@@ -123,13 +135,13 @@ Indeed, the driver is more likely to accept the bar coupon when they are with fr
 
 ### Expensive Restaurant Coupon Acceptance
 
-6.  Since the results of bar coupon shows that the coupon acceptance rate generally increases with the number of previous bar visits, we first check if the same observation applies to expensive restaurant.  
+7.  Since the results of bar coupon shows that the coupon acceptance rate generally increases with the number of previous bar visits, we first check if the same observation applies to expensive restaurant.  
 
 <img width="463" alt="image" src="https://user-images.githubusercontent.com/130137674/230890497-07e95b6e-6269-4a27-bdf8-97488b05f71d.png">
 
 Indeed, those who have been to expensive restaurants at least 4 times are more likely to accept the coupon.  This observation is consistent with that for bar coupons.
 
-7.  Because the restaurant is relatively expensive, we further hypothesis that income has an impact on the coupon acceptance rate.  
+8.  Because the restaurant is relatively expensive, we further hypothesis that income has an impact on the coupon acceptance rate.  
 
 <img width="455" alt="image" src="https://user-images.githubusercontent.com/130137674/230890861-b5221208-6db0-4118-92be-e34c7536059c.png">
 
@@ -139,10 +151,18 @@ As I could not observe a discerning pattern, I re-categorise the income into 2 g
 
 Interestingly, it appears that those of lower and higher income are equally likely to accept the expensive restaurant coupon.  
 
-8.  In the case of bar, it appears that having kids as passenger affects their decision to visit the bar.  While I do not think the same observation will be made, I nevertheless, decided to test for this. 
+9.  In the case of bar, it appears that having kids as passenger affects their decision to visit the bar.  While I do not think the same observation will be made, I nevertheless, decided to test for this. 
 
 <img width="448" alt="image" src="https://user-images.githubusercontent.com/130137674/230891078-2becb304-2e2a-4774-8857-96c5e45be81c.png">
 
 Interestingly, a person is more likely to go to an expensive restaurant with their partner while they are more likely to visit a bar with their friends.  In both scenarios, presence of kids as passengers reduces their chance of accepting the coupon. 
 
-9.  Of course, more analyses were done with other factors but the results were not presented as the outcome was not as significant.  
+10.  Of course, more analyses were done with other factors but the results were not presented as the outcome was not as significant.  
+
+# Conclusions
+
+1. In general, to encourage coupon acceptance, we should give bar/ expensive restaurant coupons to drivers who have been to such places at least 4 times. 
+
+2. Second, we should observe the passenger.  If there are kids, it is to give them pub coupons.  If the drivers are with their partners, then it is ideal that expensive restaurant coupons be given.
+
+3. Third, we try to reduce the need for the driver to detour.  As far as possible, the direction of the pub/ restaurant should be in the same direction as his/ her intended destination.  Convenience appears to be a key motivation for their acceptance of the coupon.  
