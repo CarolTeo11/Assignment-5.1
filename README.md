@@ -72,6 +72,22 @@ All codes can be found here https://github.com/CarolTeo11/Assignment-5.1/blob/ma
 
 The data can be found here https://github.com/CarolTeo11/Assignment-5.1/tree/main/assignment_5_1_starter/data
 
+## Libraries
+
+numpy
+
+pandas
+
+<img width="450" alt="image" src="https://user-images.githubusercontent.com/130137674/231785006-a1bd83b7-440d-48af-ab86-6b7027d182d0.png">
+
+## Plotting libraries
+
+seaborn
+
+plotly.express
+
+matplotlib
+
 ## Data cleaning
 
 1.  While the data is relatively structured and consistent, there is a need to correct for spelling error so that there is no downstream coding issues.  In particular, passenger is spelt "passanger" and is corrected using 
